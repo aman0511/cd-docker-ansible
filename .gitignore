@@ -1,2 +1,8 @@
 .env
 *.pyc
+
+todobackend/target
+*.xml
+.idea
+.coverage
+db.sqlite3
