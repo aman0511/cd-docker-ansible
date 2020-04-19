@@ -5,7 +5,7 @@ import os
 
 INSTALLED_APPS += ('django_nose',)
 
-TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+# TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 TEST_OUPTPUT_DIR = os.environ.get('TEST_OUPTPUT_DIR', ".")
 
 NOSE_ARGS = [

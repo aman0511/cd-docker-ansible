@@ -5,6 +5,7 @@ MAINTAINER Aman Kumar<amankumar0511@gmail.com>
 # Install dev/buil dependencies
 
 RUN apt-get update && \
+	apt-get install -y vim && \
 	apt-get install -qy python3-dev libpython3.6-dev libmysqlclient-dev \
 	build-essential libssl-dev libffi-dev \
     libxml2-dev libxslt1-dev zlib1g-dev \
@@ -41,11 +42,12 @@ COPY scripts/test.sh /usr/local/bin/test.sh
 RUN chmod +x /usr/local/bin/test.sh
 
 
-ENTRYPOINT ["test.sh"]
-
-
-CMD ["python", "manage.py", "test", "--noinput"]
 
 COPY src /application
 
 WORKDIR /application
+
+ENTRYPOINT ["test.sh"]
+
+
+CMD ["python", "manage.py", "test", "--noinput"]

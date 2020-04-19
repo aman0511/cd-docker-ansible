@@ -24,7 +24,7 @@ builder:
 agent:
   image: aman/ansible
   volumes:
-    - "../../ansible/probe.yml:/ansible/site.yml"
+      - "../../ansible/probe.yml:/ansible/site.yml"
   links:
     - db
   environment:
@@ -46,4 +46,5 @@ cache:
     - /tmp/cache:/cache
     - /build
     - ../../target:/wheelhouse
+    - ../../src:/application
   entrypoint: "true"
