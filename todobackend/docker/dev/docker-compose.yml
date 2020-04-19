@@ -12,8 +12,6 @@ test:
     MYSQL_ROOT_PASSWORD: password
     MYSQL_HOST: db
     MYSQL_PORT: 3306
-  volumes:
-    - "src:/application"
 
 builder:
   build: ../../

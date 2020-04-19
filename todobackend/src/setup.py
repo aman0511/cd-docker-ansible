@@ -13,7 +13,7 @@ setup(
         "django-cors-headers>=3.2.1",
         "djangorestframework>=3.11.0",
         "pytz>=2019.3",
-        "sqlparse>=0.3.0"
+        "sqlparse>=0.3.0",
     ],
 
     extras_require={

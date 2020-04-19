@@ -43,8 +43,8 @@ RUN chmod +x /usr/local/bin/test.sh
 
 ENTRYPOINT ["test.sh"]
 
-CMD ["python", "manage.py", "test", "--noinput"]
 
+CMD ["python", "manage.py", "test", "--noinput"]
 
 COPY src /application
 

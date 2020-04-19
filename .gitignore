@@ -6,3 +6,4 @@ todobackend/target
 .idea
 .coverage
 db.sqlite3
+todobackend-specs/node_modules
